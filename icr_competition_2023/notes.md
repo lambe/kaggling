@@ -39,3 +39,14 @@
    - 25th place = 0.18
    - 10th place = 0.17
    - 1st place = 0.14
+
+### May 20, 2023
+- Quick submission for the day, 80% for class 0 and 20% for class 1
+  - Weighted score dropped to 0.91, still very low on the scoreboard
+- Other models to try
+  - Basic two-layer neural net
+- Feature engineering; to add to DataFrame:
+  - Ratios of two features
+  - Products of two features
+  - Log of certain features (as above)
+  - Sums of two features
