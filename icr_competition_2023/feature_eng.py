@@ -82,9 +82,11 @@ test_df = pd.read_csv('test.csv')
 test_ids = test_df["Id"]
 test_df = feature_eng(test_df)
 test_df.drop(["Id"], axis=1, inplace=True, errors="ignore")
-# y_pred = lr.predict(test_df)
+y_pred = lr.predict(test_df)
 
 # Get the probability of each class
 y_pred_proba = lr.predict_proba(test_df)
 
-print(f"Predictions: {y_pred_proba}")
+# Create a submission file
+submission_df = pd.DataFrame({"Id": test_ids, "class_0": (y_pred == 0).astype(float), "class_1": (y_pred == 1).astype(float)})
+submission_df.to_csv("submission.csv", index=False)
