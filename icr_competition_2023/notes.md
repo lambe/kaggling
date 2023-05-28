@@ -55,6 +55,7 @@
 - Completed a notebook with basic logistic regression with L1 penalty method
   - 5-fold cross validation did note accuracies upwards of 88%, surprisingly
   - Score = 6.67 on test set?!
+    - ln 10^-15 is about -34.539, for reference; ln 0.9 is about -0.1 and ln 0.99 is about -0.01
   - Retry using the probabilities themselves rather than a simple binary 0-1 decision (resubmit tomorrow)
 - Leaderboard state:
   - 1st place = 0.13
@@ -62,3 +63,9 @@
   - 25th place = 0.15
   - 100th place = 0.16
   - 250th place = 0.17
+- ideas for future exploration (based on Kaggle forum reading)
+  - tabPFN package - transformer NN for learning tabular data
+  - autosklearn - metalearning using an sklearn-like interface
+  - try leveraging the `greeks.csv` data: predict greeks as an intermediate step to binary prediction
+    - Alpha column specifies the specific illness - A if no condition; B, D, or G for specific condition
+    - Beta, Gamma, and Delta are "experimental characteristics"

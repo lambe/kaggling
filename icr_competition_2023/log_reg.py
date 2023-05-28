@@ -8,7 +8,7 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import accuracy_score
 import numpy as np
 
-def feature_eng(df):
+def feature_eng(df, filler_data=None):
     # Create a pipeline for feature engineering
     col_names = df.columns
     col_names = col_names.drop(["Id", "Class", "EJ"], errors="ignore")
@@ -18,13 +18,18 @@ def feature_eng(df):
     df["EJ_B"] = df["EJ"].apply(lambda x: 1 if x == "B" else 0)
     df.drop("EJ", axis=1, inplace=True)
 
-    # Fill missing data with the mean of the column
+    # Fill missing data with the median of the column
     print("Imputing missing values...")
+    if filler_data is None:
+        for col in col_names:
+            df[col].fillna(df[col].median(), inplace=True)
+    else:
+        for col in col_names:
+            df[col].fillna(filler_data[col], inplace=True)
+    
+    # Verify that the minimum value is not 0
     for col in col_names:
-        df[col].fillna(df[col].mean(), inplace=True)
-        # Verify that the minimum value is not 0
         if df[col].min() == 0.0:
-            # raise ValueError(f"Minimum value of column {col} is 0")
             df[col] = df[col].apply(lambda x: x + 0.0001)
 
     # Compute the log of the numerical feature values
@@ -59,7 +64,9 @@ sample_ids = train_df["Id"]
 
 # Drop unnecessary columns from df
 train_df.drop(["Id", "Class"], axis=1, inplace=True, errors="ignore")
-train_df = feature_eng(train_df)
+train_df_ex_EJ = train_df.drop("EJ", axis=1, errors="ignore")
+feature_medians = train_df_ex_EJ.median()
+train_df = feature_eng(train_df, filler_data=feature_medians)
 
 # Implement logistic regression with 5-fold cross validation
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
