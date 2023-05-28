@@ -50,3 +50,15 @@
   - Products of two features
   - Log of certain features (as above)
   - Sums of two features
+
+### May 28, 2023
+- Completed a notebook with basic logistic regression with L1 penalty method
+  - 5-fold cross validation did note accuracies upwards of 88%, surprisingly
+  - Score = 6.67 on test set?!
+  - Retry using the probabilities themselves rather than a simple binary 0-1 decision (resubmit tomorrow)
+- Leaderboard state:
+  - 1st place = 0.13
+  - 10th place = 0.14
+  - 25th place = 0.15
+  - 100th place = 0.16
+  - 250th place = 0.17

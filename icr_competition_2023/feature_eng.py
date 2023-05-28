@@ -88,5 +88,5 @@ y_pred = lr.predict(test_df)
 y_pred_proba = lr.predict_proba(test_df)
 
 # Create a submission file
-submission_df = pd.DataFrame({"Id": test_ids, "class_0": (y_pred == 0).astype(float), "class_1": (y_pred == 1).astype(float)})
+submission_df = pd.DataFrame({"Id": test_ids, "class_0": y_pred_proba[:, 0], "class_1": y_pred_proba[:, 1]})
 submission_df.to_csv("submission.csv", index=False)
