@@ -5,7 +5,7 @@ import pandas as pd
 # import sklearn as sk
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import KFold
-from sklearn.metrics import accuracy_score, balanced_accuracy_score
+from sklearn.metrics import accuracy_score
 import numpy as np
 
 def feature_eng(df, filler_data=None):
@@ -59,8 +59,14 @@ def feature_eng(df, filler_data=None):
     return df
 
 train_df = pd.read_csv('train.csv')
+greeks_df = pd.read_csv('greeks.csv')
 labels = train_df["Class"]
+labels_text = greeks_df["Alpha"]
 sample_ids = train_df["Id"]
+
+# Convert labels to integers
+labels[labels_text == "D"] = 2
+labels[labels_text == "G"] = 3
 
 # Drop unnecessary columns from df
 train_df.drop(["Id", "Class"], axis=1, inplace=True, errors="ignore")
@@ -70,26 +76,22 @@ train_df = feature_eng(train_df, filler_data=feature_medians)
 
 # Implement logistic regression with 5-fold cross validation
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
-lr = LogisticRegression(max_iter=1000, penalty="l1", solver="liblinear", C=0.1)
+lr = LogisticRegression(max_iter=1000, multi_class="multinomial") # WARNING - hits iteration limit
 accuracy_scores = []
-balanced_accuracy_scores = []
 for train_index, test_index in kf.split(train_df):
     X_train, X_test = train_df.iloc[train_index], train_df.iloc[test_index]
     y_train, y_test = labels[train_index], labels[test_index]
     lr.fit(X_train, y_train)
     y_pred = lr.predict(X_test)
     accuracy_scores.append(accuracy_score(y_test, y_pred))
-    balanced_accuracy_scores.append(balanced_accuracy_score(y_test, y_pred))
 
 print(f"Accuracy scores: {accuracy_scores}")
-print(f"Balanced accuracy scores: {balanced_accuracy_scores}")
 
 # Train the model on the entire training set
 lr.fit(train_df, labels)
 
 # Show the non-zero coefficients of the model with their feature labels
-s_coeff = pd.Series(lr.coef_[0], index=train_df.columns)
-print(f"Non-zero coefficients: {s_coeff[abs(s_coeff) >= 1.e-6]}")
+print(f"Non-zero coefficients: {lr.coef_}")
 
 # Import test data and create a data pipeline with feature eng.
 test_df = pd.read_csv('test.csv')
