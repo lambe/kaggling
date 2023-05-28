@@ -31,21 +31,27 @@ for col in col_names:
 
 # Compute the log of the numerical feature values
 print("Computing log features...")
+series_dict = {}
 for col in col_names:
     new_col_name = col + "_log"
-    train_df[new_col_name] = train_df[col].apply(lambda x: np.log(x))
+    series_dict[new_col_name] = train_df[col].apply(lambda x: np.log(x))
+log_df = pd.DataFrame(series_dict)
+train_df = pd.concat([train_df, log_df], axis=1)
 
 # Compute the ratio of two numerical features as a new feature
 print("Computing ratio and product features...")
+series_dict = {}
 for col1 in col_names:
     for col2 in col_names:
         if col1 != col2:
             ratio_col_name = col1 + "_" + col2 + "_ratio"
-            train_df[ratio_col_name] = train_df[col1] / train_df[col2]
+            series_dict[ratio_col_name] = train_df[col1] / train_df[col2]
             product_col_name = col1 + "_" + col2 + "_product"
             # Avoid duplicate product features
             if col2 + "_" + col1 + "_product" not in train_df.columns:
-                train_df[product_col_name] = train_df[col1] * train_df[col2]
+                series_dict[product_col_name] = train_df[col1] * train_df[col2]
+ratio_prod_df = pd.DataFrame(series_dict)
+train_df = pd.concat([train_df, ratio_prod_df], axis=1)
 
 # Drop unnecessary columns from train_df
 train_df.drop(["Id", "Class"], axis=1, inplace=True)
@@ -62,4 +68,4 @@ for train_index, test_index in kf.split(train_df):
     accuracy_scores.append(accuracy_score(y_test, y_pred))
 
 print(f"Accuracy scores: {accuracy_scores}")
-# train_df.info()
+train_df.info()
