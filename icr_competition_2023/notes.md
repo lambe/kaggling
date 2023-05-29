@@ -57,6 +57,7 @@
   - Score = 6.67 on test set?!
     - ln 10^-15 is about -34.539, for reference; ln 0.9 is about -0.1 and ln 0.99 is about -0.01
   - Retry using the probabilities themselves rather than a simple binary 0-1 decision (resubmit tomorrow)
+    - Done after 8pm; Score = 1.51 - still not good?!
 - Leaderboard state:
   - 1st place = 0.13
   - 10th place = 0.14
