@@ -70,3 +70,10 @@
   - try leveraging the `greeks.csv` data: predict greeks as an intermediate step to binary prediction
     - Alpha column specifies the specific illness - A if no condition; B, D, or G for specific condition
     - Beta, Gamma, and Delta are "experimental characteristics"
+
+### June 8, 2023
+- Investigate preprocessing utilities of scikit-learn
+  - StandardScaler, PowerTransformer, RobustScaler, MinMaxScaler, MaxAbsScaler
+- There's a [notebook](https://www.kaggle.com/code/shashanknecrothapa/icr-classification-logistic-regression) where logisitic regression gets a score of 0.19 using just StandardScaler and the product of features
+- Leaderboard state:
+  - 1st place = 0.10
