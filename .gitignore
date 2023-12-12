@@ -164,3 +164,6 @@ submission.csv
 
 # Scratch folder
 scratch/*.py
+
+# Competition folders
+enefit_pebob_2023/competition_data/*
