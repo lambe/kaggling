@@ -68,4 +68,4 @@ Validation error on production predictor ~= 76.5
 
 First attempt did not go well. Cross-validated MAE went up to 57.7 and 79.7 (not great) and score on Kaggle leaderboard shot up from 69 to over 98!
 
-Put back all of the old features and got the MAE scores down to 48.9 and 73.3 (better than before). Score on Kaggle leaderboard is 69.4.
+Put back all of the old features and got the MAE scores down to 48.9 and 73.3 (better than before). Score on Kaggle leaderboard is 92.13?!
