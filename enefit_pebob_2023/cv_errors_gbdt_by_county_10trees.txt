@@ -1,0 +1,127 @@
+County: 0
+Fit Time(s): 8.315
+Score Time(s): 0.054
+Error(MAE): 1043.381
+Fit Time(s): 8.899
+Score Time(s): 0.046
+Error(MAE): 869.156
+
+County: 1
+Fit Time(s): 4.060
+Score Time(s): 0.031
+Error(MAE): 20.726
+Fit Time(s): 4.394
+Score Time(s): 0.031
+Error(MAE): 62.250
+
+County: 2
+Fit Time(s): 5.532
+Score Time(s): 0.037
+Error(MAE): 61.917
+Fit Time(s): 6.834
+Score Time(s): 0.040
+Error(MAE): 79.818
+
+County: 3
+Fit Time(s): 5.687
+Score Time(s): 0.035
+Error(MAE): 101.455
+Fit Time(s): 5.755
+Score Time(s): 0.035
+Error(MAE): 183.069
+
+County: 4
+Fit Time(s): 6.097
+Score Time(s): 0.038
+Error(MAE): 154.530
+Fit Time(s): 6.757
+Score Time(s): 0.037
+Error(MAE): 119.623
+
+County: 5
+Fit Time(s): 6.572
+Score Time(s): 0.038
+Error(MAE): 179.402
+Fit Time(s): 7.267
+Score Time(s): 0.040
+Error(MAE): 244.908
+
+County: 6
+Fit Time(s): 2.630
+Score Time(s): 0.024
+Error(MAE): 58.063
+Fit Time(s): 3.104
+Score Time(s): 0.038
+Error(MAE): 33.192
+
+County: 7
+Fit Time(s): 8.482
+Score Time(s): 0.037
+Error(MAE): 192.622
+Fit Time(s): 8.716
+Score Time(s): 0.038
+Error(MAE): 361.230
+
+County: 8
+Fit Time(s): 3.937
+Score Time(s): 0.030
+Error(MAE): 105.778
+Fit Time(s): 4.425
+Score Time(s): 0.029
+Error(MAE): 277.792
+
+County: 9
+Fit Time(s): 5.485
+Score Time(s): 0.032
+Error(MAE): 54.141
+Fit Time(s): 6.002
+Score Time(s): 0.036
+Error(MAE): 180.235
+
+County: 10
+Fit Time(s): 5.928
+Score Time(s): 0.034
+Error(MAE): 110.667
+Fit Time(s): 6.338
+Score Time(s): 0.040
+Error(MAE): 246.798
+
+County: 11
+Fit Time(s): 8.620
+Score Time(s): 0.042
+Error(MAE): 609.646
+Fit Time(s): 9.506
+Score Time(s): 0.051
+Error(MAE): 450.490
+
+County: 12
+Fit Time(s): 2.187
+Score Time(s): 0.032
+Error(MAE): 118.489
+Fit Time(s): 2.000
+Score Time(s): 0.029
+Error(MAE): 38.084
+
+County: 13
+Fit Time(s): 5.028
+Score Time(s): 0.033
+Error(MAE): 38.571
+Fit Time(s): 5.374
+Score Time(s): 0.035
+Error(MAE): 440.732
+
+County: 14
+Fit Time(s): 5.806
+Score Time(s): 0.051
+Error(MAE): 238.489
+Fit Time(s): 5.390
+Score Time(s): 0.034
+Error(MAE): 249.003
+
+County: 15
+Fit Time(s): 8.011
+Score Time(s): 0.037
+Error(MAE): 105.909
+Fit Time(s): 7.054
+Score Time(s): 0.036
+Error(MAE): 162.654
