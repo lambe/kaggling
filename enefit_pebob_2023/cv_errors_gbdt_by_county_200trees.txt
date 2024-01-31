@@ -1,0 +1,128 @@
+County: 0
+Fit Time(s): 85.536
+Score Time(s): 0.312
+Consumption Error (MAE): 144.959
+Fit Time(s): 77.525
+Score Time(s): 0.332
+Production Error (MAE): 203.756
+
+County: 1
+Fit Time(s): 60.529
+Score Time(s): 0.158
+Consumption Error (MAE): 5.425
+Fit Time(s): 54.481
+Score Time(s): 0.159
+Production Error (MAE): 10.769
+
+County: 2
+Fit Time(s): 67.072
+Score Time(s): 0.204
+Consumption Error (MAE): 18.072
+Fit Time(s): 60.554
+Score Time(s): 0.199
+Production Error (MAE): 23.073
+
+County: 3
+Fit Time(s): 69.505
+Score Time(s): 0.195
+Consumption Error (MAE): 23.820
+Fit Time(s): 60.305
+Score Time(s): 0.207
+Production Error (MAE): 40.291
+
+County: 4
+Fit Time(s): 74.729
+Score Time(s): 0.234
+Consumption Error (MAE): 37.102
+Fit Time(s): 66.926
+Score Time(s): 0.248
+Production Error (MAE): 37.727
+
+County: 5
+Fit Time(s): 76.493
+Score Time(s): 0.257
+Consumption Error (MAE): 39.707
+Fit Time(s): 66.314
+Score Time(s): 0.249
+Production Error (MAE): 56.506
+
+County: 6
+Fit Time(s): 45.375
+Score Time(s): 0.073
+Consumption Error (MAE): 27.090
+Fit Time(s): 42.064
+Score Time(s): 0.067
+Production Error (MAE): 12.990
+
+County: 7
+Fit Time(s): 79.875
+Score Time(s): 0.280
+Consumption Error (MAE): 64.792
+Fit Time(s): 68.822
+Score Time(s): 0.244
+Production Error (MAE): 117.991
+
+County: 8
+Fit Time(s): 60.262
+Score Time(s): 0.152
+Consumption Error (MAE): 23.324
+Fit Time(s): 54.056
+Score Time(s): 0.158
+Production Error (MAE): 149.545
+
+County: 9
+Fit Time(s): 70.444
+Score Time(s): 0.200
+Consumption Error (MAE): 15.923
+Fit Time(s): 58.847
+Score Time(s): 0.203
+Production Error (MAE): 45.726
+
+County: 10
+Fit Time(s): 71.035
+Score Time(s): 0.231
+Consumption Error (MAE): 29.628
+Fit Time(s): 61.503
+Score Time(s): 0.209
+Production Error (MAE): 45.454
+
+County: 11
+Fit Time(s): 82.288
+Score Time(s): 0.307
+Consumption Error (MAE): 99.724
+Fit Time(s): 77.170
+Score Time(s): 0.316
+Production Error (MAE): 111.124
+
+County: 12
+Fit Time(s): 35.188
+Score Time(s): 0.068
+Consumption Error (MAE): 62.056
+Fit Time(s): 29.677
+Score Time(s): 0.069
+Production Error (MAE): 19.103
+
+County: 13
+Fit Time(s): 66.387
+Score Time(s): 0.238
+Consumption Error (MAE): 14.653
+Fit Time(s): 58.657
+Score Time(s): 0.198
+Production Error (MAE): 347.197
+
+County: 14
+Fit Time(s): 67.645
+Score Time(s): 0.234
+Consumption Error (MAE): 48.409
+Fit Time(s): 60.724
+Score Time(s): 0.244
+Production Error (MAE): 74.273
+
+County: 15
+Fit Time(s): 75.559
+Score Time(s): 0.248
+Consumption Error (MAE): 28.060
+Fit Time(s): 65.451
+Score Time(s): 0.237
+Production Error (MAE): 45.521
+

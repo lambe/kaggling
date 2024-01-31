@@ -1,0 +1,31 @@
+Product Type: 0
+Fit Time(s): 15.551
+Score Time(s): 0.056
+Consumption Error (MAE): 133.300
+Fit Time(s): 15.294
+Score Time(s): 0.064
+Production Error (MAE): 105.176
+
+Product Type: 1
+Fit Time(s): 40.590
+Score Time(s): 0.154
+Consumption Error (MAE): 65.182
+Fit Time(s): 43.905
+Score Time(s): 0.202
+Production Error (MAE): 106.485
+
+Product Type: 2
+Fit Time(s): 10.424
+Score Time(s): 0.045
+Consumption Error (MAE): 16.109
+Fit Time(s): 11.947
+Score Time(s): 0.042
+Production Error (MAE): 13.668
+
+Product Type: 3
+Fit Time(s): 45.524
+Score Time(s): 0.163
+Consumption Error (MAE): 448.879
+Fit Time(s): 46.574
+Score Time(s): 0.175
+Production Error (MAE): 485.817
